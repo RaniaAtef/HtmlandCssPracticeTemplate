@@ -155,9 +155,19 @@ body {
 /* end header */
 
 /* start landing page */
+.landing::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay color */
+}
 .landing {
-  background-image: url(../images/Venice-HD-Wallpaper.jpg);
+  background-image: url(../images/15\ of\ the\ top\ Venice\ Instagram\ Spots\ -\ Kelsey\ in\ London.jpeg);
   background-size: cover;
+  background-position: center;
   height: calc(100vh - 64px);
   position: relative;
 }
@@ -169,15 +179,19 @@ body {
   transform: translate(-43%, 200%);
   width: 320px;
   max-width: 100%;
+  z-index: 1;
 }
 
 .landing .intro-text h1 {
+  z-index: 1;
   margin: 0;
-  font-weight: bold;
-  font-size: 50px;
+  font-weight: 800;
+  font-size: 45px;
   color: var(--main-color);
 }
 .landing .intro-text p {
+  z-index: 1;
+  color: white;
   font-size: 19px;
   line-height: 1.8;
 }
